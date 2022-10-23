@@ -1,9 +1,12 @@
 import http from "../utils/axionUtils"
 
 //用户登录
-export const loginApi = (username, password) => http.post('/user/signing', {username, password})
+export const loginApi = (username, password) => http.post('/user/signing', {username, password},)
+//查询用户信息
+export const getUserInfo = (username, password) => http.get('/user/getUserInfo', {username, password})
 //获取商品类目
 export const getCategory = () => http.get('/category/getCategory')
+
 // 自定义请求
 export const allRequest = (url, type, data) => {
     return http.request({
