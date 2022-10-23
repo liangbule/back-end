@@ -1,10 +1,14 @@
 import React, {useState} from 'react';
 import {Button} from "antd";
+import {loginApi} from '../../api'
 
 function Index(props) {
     let [name, setName] = useState('duxiang')
     const onClickName = () => {
-        setName('改变后杜翔')
+        setName('改变name')
+        loginApi().then((res) => {
+            console.log(res.data)
+        })
     }
     return (
         <div>

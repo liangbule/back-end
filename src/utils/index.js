@@ -1,10 +1,11 @@
-import createElement from './createElement'
-import {sessionStore, cookieStore} from './storeUtils'
-import {isLogin} from "./isLoginUtild";
+import * as CreateElement from './createElement'
+import * as StoreUtils from './storeUtils'
+import * as IsLoginUtil from "./isLoginUtild";
+import * as httpUtils from './axionUtils'
 
-export const UtilsObject = {
-    createElement,
-    sessionStore,
-    cookieStore,
-    isLogin
+export {
+    CreateElement,
+    StoreUtils,
+    IsLoginUtil,
+    httpUtils,
 }

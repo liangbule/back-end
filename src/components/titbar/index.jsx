@@ -1,5 +1,6 @@
 import React from 'react';
- import './index.less'
+import './index.less'
+
 const Index = () => {
     return (
         <div className="title">
