@@ -4,6 +4,8 @@ import http from "../utils/axionUtils"
 export const loginApi = (username, password) => http.post('/user/signing', {username, password},)
 //查询用户信息
 export const getUserInfo = (username, password) => http.get('/user/getUserInfo', {username, password})
+// 文件上传
+export const setUploadFile = () => http.post('/uploadFile/upload')
 //获取商品类目
 export const getCategory = () => http.get('/category/getCategory')
 
